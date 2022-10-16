@@ -26,9 +26,7 @@ try {
 } catch {
     throw new Error('Invalid date!')
 }
-//return
-console.log(date);
-  return ['winter', 'spring','summer', 'autumn'][Math.floor(date.getMonth()/3)]
+  return ['winter', 'spring','summer', 'autumn','winter'][Math.floor((date.getMonth()+1)/3)]
 }
 
 module.exports = {
